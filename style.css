@@ -1,0 +1,67 @@
+/* General page styling */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background : url('bg.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Scoreboard */
+#score {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  z-index: 1000;
+}
+
+/* Message (start/game over text) */
+#message {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  font-weight: bold;
+  color: #444;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px 25px;
+  border-radius: 12px;
+  display: none;
+  z-index: 1000;
+}
+
+/* Net (player character) */
+#net { 
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 1%;
+  left: 100px;
+  background: url('net.png') no-repeat center/cover; /* replace with your net image */
+  border-radius: 50%;
+  z-index: 10;
+}
+
+/* Butterfly */
+.bfly {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 250px;
+  left: 1000px;
+  background: url('bfly.png') no-repeat center/cover; /* replace with your butterfly image */
+  z-index: 5;
+}
+
+.hitbox {
+  position: absolute;
+  background: transparent; /* invisible */
+  pointer-events: none;    /* ignore mouse clicks */
+}
